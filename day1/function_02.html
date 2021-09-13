@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Function Literal(표현식)</title>
+
+    </head>
+    <body>
+        <script>
+
+            // console.log(add(1, 2)); // global 객체에 저장되지 않기 때문에 Error가 발생한다.
+
+            // Function Literal
+            var add = function(num1, num2) {
+                return num1 + num2;
+            }
+
+            console.log(add(1, 2));
+
+            // console.log(add) // Function 객체 가 출력된다. Function의 내용.
+
+
+        </script>
+    </body>
+</html>

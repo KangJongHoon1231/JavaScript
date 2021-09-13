@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>실행 컨택스트</title>
+    </head>
+    <body>
+        <script>
+
+            console.log(hello('julia'));
+            // console.log(hello()); // 결과: Hello, undifind
+
+            // console.log(`username : ${username}`);
+
+
+            // 전역 변수
+            let username = "Julia";
+
+            console.log(`username : ${username}`);
+
+            // 함수 선언문
+            function hello(str_name) {
+                console.log(`hello name : ${str_name}`);
+
+                // 지역 변수
+                var str = 'Hello, ' + str_name;
+                return str;
+            }
+
+            console.log(hello());
+
+        </script>
+    </body>
+</html>
